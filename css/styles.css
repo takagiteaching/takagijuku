@@ -1,0 +1,230 @@
+/* 全体の背景とフォント設定 */
+body {
+    background-color: #fff8e1; /* 薄い黄色を背景色に設定 */
+    color: #333; /* テキストの色を濃いグレーに設定 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー全体のスタイル */
+header {
+    padding: 20px;
+    background-color: #ff5252; /* 赤を基調とした背景色 */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ヘッダー上部（タイトルと言語選択タブ）のスタイル */
+.header-top {
+    display: flex;
+    justify-content: space-between; /* タイトルと言語選択タブを左右に配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+}
+
+/* タイトルのスタイル */
+#title {
+    margin: 0;
+    font-size: 2em;
+}
+/* ホームセクションのスタイル */
+.home-section {
+    margin-bottom: 20px; /* 各セクションの間に余白を追加 */
+    padding: 15px;
+    background-color: #fff8e1; /* 薄い黄色の背景 */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-section h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #ff5252; /* 赤い見出し */
+}
+.home-section h4 {
+    margin-top: 0;
+    margin-bottom: 1px;
+    font-size: 1.0em;
+    color: #333; /* 赤い見出し */
+}
+.home-section p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 言語選択タブのスタイル */
+.language-select-container {
+    display: flex;
+    gap: 10px; /* ボタン間のスペース */
+}
+
+.language-option {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 1px solid #ff5252; /* 赤い枠線 */
+    border-radius: 5px;
+    background-color: white; /* 白い背景 */
+    cursor: pointer;
+    color: #ff5252; /* 赤い文字色 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-option:hover {
+    background-color: #ff5252; /* ホバー時に赤い背景 */
+    color: white; /* ホバー時に白い文字色 */
+}
+
+/* ナビゲーションタブのスタイル */
+.navigation-tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navigation-tabs ul li {
+    position: relative;
+}
+
+.navigation-tabs ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffab40; /* 黄色を基調としたオレンジ色 */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ホバー時のスタイル */
+.navigation-tabs ul li a:hover {
+    background-color: #ff6f00; /* ホバー時に濃いオレンジ色 */
+    color: white; /* ホバー時の文字色 */
+}
+
+/* セクションのスタイル */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* カリキュラムセクションのスタイル */
+.curriculum-section {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    gap: 20px; /* カード間のスペース */
+    margin-top: 20px;
+}
+
+.curriculum-card {
+    background-color: #fff8e1; /* 薄い黄色の背景 */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curriculum-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #ff5252; /* 赤い見出し */
+}
+
+.curriculum-card p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.curriculum-card:hover {
+    transform: translateY(-5px); /* ホバー時に少し浮き上がる */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ホバー時の影 */
+}
+
+/* 見出しのスタイル */
+h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #ff5252; /* 赤い見出し */
+}
+
+/* テキストのスタイル */
+p {
+    line-height: 1.6;
+}
+
+/* 講師紹介セクションのスタイル */
+.tutor-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff8e1; /* 薄い黄色の背景 */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tutor-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ff5252; /* 赤い枠線 */
+}
+
+.tutor-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ff5252; /* 赤い文字色 */
+}
+
+.tutor-info p {
+    margin: 5px 0 0;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* レスポンシブなiframeコンテナ */
+.responsive-iframe-container {
+    position: relative;
+    width: 100%; /* 親要素の幅にフィット */
+    height: 100vh;
+    padding-top: 56.25%; /* 16:9 アスペクト比を維持 */
+    overflow: hidden;
+    border-radius: 8px; /* 角を丸くする（任意） */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影を追加（任意） */
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* 枠線を削除 */
+}
+
+
+.google-form-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #4285F4; /* Googleの青色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.google-form-link:hover {
+    background-color: #357ae8;
+}
+
+
